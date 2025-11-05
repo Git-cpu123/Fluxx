@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<p>Read the book below:</p>
+<embed src="{{ url_for('pdf', filename='extinction.pdf') }}" type="application/pdf">
+{% endblock %}

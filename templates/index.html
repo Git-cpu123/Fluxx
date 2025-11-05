@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to Fluxx Studios</h1>
+<p>Fluxx Studios. we make books that move you</p>
+<br>
+<p>Developer and Finance: Nikesh Patel. *ONLY READ BOOKS ON COMPUTER*</p>
+<ul>
+    <li><a href="{{ url_for('patchwork') }}">Patchwork: Issue 1 By Iain i, Sterling A, And Emily D</a></li>
+    <li><a href="{{ url_for('march_call') }}">March Call by Emily D, Iain I, and Sterling A</a></li>
+    <li><a href="{{ url_for('neuronet') }}">NeuroNet By Iain I, and Sterling A</a></li>
+    <li><a href="{{ url_for('extinction') }}">Extinction.exe by Iain I</a></li>
+    <li><a href="{{ url_for('merch') }}">MERCH</a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

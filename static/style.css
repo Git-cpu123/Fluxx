@@ -1,0 +1,17 @@
+/* Example styling */
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    color: #222;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
