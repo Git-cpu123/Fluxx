@@ -2,7 +2,16 @@
 
 {% block content %}
 <h1>{{ title }}</h1>
-<p> * ONLY READ BOOKS ON COMPUTER *Read the book below:</p>
-<embed src="{{ url_for('pdf', filename='PATCHWORK 01.pdf') }}" type="application/pdf">
+<p>Read the book below:</p>
+<embed src="PATCHWORK 01.pdf">
+<button id="downloadBtn">DOWNLOAD BOOK FOR IOS</button>
+<script>
+    document.getElementById('downloadBtn').addEventListener('click', () => {
+        const link = document.createElement('a');
+        link.href = 'PATCHWORK 01.pdf';
+        link.download = 'PATCHWORK.pdf;
+        document.body.removeChild(link);
+    });
+</script>
 
 {% endblock %}
