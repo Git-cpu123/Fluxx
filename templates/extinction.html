@@ -4,4 +4,6 @@
 <h1>{{ title }}</h1>
 <p>Read the book below:</p>
 <embed src="{{ url_for('pdf', filename='extinction.pdf') }}" type="application/pdf">
+<br>
+<a href="fluxx_web/static/extinction.pdf" download class="download-button">Download PDF</a>
 {% endblock %}
