@@ -41,6 +41,11 @@ def merch():
     return render_template('MERCH!.html', title="MERCH")
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html', title="about")
+
+
 if __name__ == "__main__":
     # Listen on all interfaces for ngrok
     app.run(host='0.0.0.0', port=5000)
